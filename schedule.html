@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Busy Day Schedule</title>
+    
+    <!-- Internal Style Sheet as requested by your teacher -->
+    <style>
+        /* 1. Modifying the table itself */
+        table {
+            width: 70%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 2. Modifying the table headers */
+        th {
+            background-color: #4A90E2;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 3. Modifying all table cells (both th and td) */
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        /* 4. Modifying at least one column (Styles the Time column text) */
+        .time-column {
+            color: #2c3e50;
+            font-weight: bold;
+            width: 30%;
+        }
+
+        /* 5. Modifying at least one row (Highlights the lunch break row) */
+        .highlight-row {
+            background-color: #fff3cd;
+            font-style: italic;
+        }
+
+        /* Styling for page heading */
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            color: #333;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 Daily Schedule</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time Block</th>
+                <th>Activity / Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-column">7:00 AM - 7:30 AM</td>
+                <td>Waking up time</td>
+            </tr>
+            <tr>
+                <td class="time-column">7:30 AM - 8:00 AM</td>
+                <td>I eat breakfast</td>
+            </tr>
+            <tr>
+                <td class="time-column">8:00 AM - 12:00 PM</td>
+                <td>English Time</td>
+            </tr>
+            <!-- This row uses the highlight-row class to fulfill the row rule -->
+            <tr class="highlight-row">
+                <td class="time-column">12:00 PM - 12:45 PM</td>
+                <td>Lunch break </td>
+            </tr>
+            <tr>
+                <td class="time-column">12:45 PM - 3:00 PM</td>
+                <td>Finish up the rest of my classes for the day</td>
+            </tr>
+            <tr>
+                <td class="time-column">3:15 PM - 4:45 PM</td>
+                <td>Relax time</td>
+            </tr>
+            <tr>
+                <td class="time-column">5:00 PM - 7:00 PM</td>
+                <td>Eat dinner and hang out with my family</td>
+            </tr>
+            <tr>
+                <td class="time-column">7:15 PM - 10:00 PM</td>
+                <td>Dinner and getting ready for bed</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
