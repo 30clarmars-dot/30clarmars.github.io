@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three Menus Assignment</title>
+    <style>
+        /* This layout lines up your three menus side-by-side cleanly */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        /* Base styles shared by all three menus to match your instructions */
+        .menu-card {
+            width: 400px;
+            height: 550px;
+            margin: 20px;
+            padding: 30px;
+            box-sizing: border-box; /* Ensures padding stays inside the 400x550 frame */
+            text-align: center;
+        }
+
+        .menu-card h2 {
+            font-size: 28px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .menu-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .menu-card li {
+            font-size: 18px;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* BREAKFAST MENU CONTAINER */
+        #breakfast {
+            background-image: url('https://transparenttextures.com');
+            background-repeat: repeat;
+            border: 5px dashed #b19073;
+            color: #4a3b32;
+        }
+
+        /* LUNCH MENU CONTAINER */
+        #lunch {
+            background-image: url('https://transparenttextures.com');
+            background-position: center;
+            border: 5px double #3b7a57;
+            color: #1e3f20;
+        }
+
+        /* DINNER MENU CONTAINER */
+        #dinner {
+            background-image: url('https://transparenttextures.com');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            border: 5px solid #2b2b2b;
+            color: #111111;
+            background-color: #e2dfda; /* Tint color under the thread pattern */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Breakfast Menu Div -->
+    <div id="breakfast" class="menu-card">
+        <h2>Breakfast Menu</h2>
+        <hr style="border: 1px dashed #b19073;">
+        <ul>
+            <li> Pancakes — <span class="price">$10.99</span></li>
+            <li> Waffle Combo — <span class="price">$12.50</span></li>
+            <li> Eggs — <span class="price">$14.00</span></li>
+            <li>Avocado Sourdough Toast — <span class="price">$11.25</span></li>
+            <li>Fresh  Coffee — <span class="price">$3.50</span></li>
+            <li> Orange Juice — <span class="price">$4.00</span></li>
+        </ul>
+    </div>
+
+    <!-- Lunch Menu Div -->
+    <div id="lunch" class="menu-card">
+        <h2>Lunch Menu</h2>
+        <hr style="border: 1px double #3b7a57;">
+        <ul>
+            <li> Caesar Salad — <span class="price">$11.99</span></li>
+            <li> Bacon Burger — <span class="price">$15.50</span></li>
+            <li> Chicken Wrap — <span class="price">$13.00</span></li>
+            <li> Cheesesteak — <span class="price">$16.25</span></li>
+            <li>Iced Tea — <span class="price">$3.25</span></li>
+            <li> Soda — <span class="price">$2.75</span></li>
+        </ul>
+    </div>
+
+    <!-- Dinner Menu Div -->
+    <div id="dinner" class="menu-card">
+        <h2>Dinner Menu</h2>
+        <hr style="border: 1px solid #2b2b2b;">
+        <ul>
+            <li>-Grilled Ribeye — <span class="price">$34.99</span></li>
+            <li> Salmon — <span class="price">$28.50</span></li>
+            <li> Mushroom Pasta — <span class="price">$22.00</span></li>
+            <li>Roasted Chicken — <span class="price">$24.25</span></li>
+            <li> Red Wine — <span class="price">$9.50</span></li>
+            <li> Lava Cake — <span class="price">$8.00</span></li>
+        </ul>
+    </div>
+
+</body>
+</html>
